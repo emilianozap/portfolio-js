@@ -1,0 +1,384 @@
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Rubik", sans-serif;
+  color: white;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+  
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-image: url(/assets/img/fondo2.jpg);
+  background-repeat: no-repeat;
+ background-size: 100% 510%;
+ 
+}
+/* header */
+header {
+  background-color: #c99806;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.header-container h1 {
+  font-size: 45px;
+  color: black;
+  text-decoration: underline;
+}
+.logo {
+  width: 170px;
+  margin-bottom: 10px;
+}
+
+/* navbar */
+.section-navbar {
+  position: fixed;
+  right: 0.1cm;
+  z-index: 5555;
+  top: 5cm;
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  height: 100%;
+  width: 50px;
+}
+
+.navbar ul li {
+  border-radius: 50%;
+  background-color: #c99806;
+  padding: 6px;
+  margin: 10px;
+}
+
+.navbar ul li a i {
+  font-size: 20px;
+  color:  black;
+}
+.navbar ul li a p {
+ display: none;
+}
+
+
+.toogle-menu i {
+  font-size: 50px;
+  color: black;
+  display: none;
+}
+
+/* section hero */
+.hero {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.img-hero {
+  width: 35%;
+  height: 500px;
+}
+/* text hero*/
+
+.text-hero {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  justify-content: end;
+}
+
+.btn {
+  margin: 30px 0px 30px 0px;
+  position: relative;
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  letter-spacing: 2px;
+  width: 200px;
+  height: 60px;
+  background-color: #c99806;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  padding-left: 40px;
+  border: 0.5px solid white;
+  transition: 0, 5s;
+  overflow: hidden;
+}
+
+.btn::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.5);
+  z-index: 1;
+  transform: translateX(-170px) skew(30deg);
+  transition: 0.75s ease-in-out;
+}
+.btn:hover::after {
+  transform: translateX(170px) skew(30deg);
+}
+.btn:hover {
+  padding-left: 0;
+  padding-right: 40px;
+}
+
+.btn span {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  border-radius: 50%;
+  left: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease-in-out;
+}
+
+.btn:hover span {
+  left: calc(100% - 55px);
+  background-color: #fff;
+}
+.svg {
+  font-size: 30px;
+}
+
+.btn:hover .svg {
+  color: red;
+}
+
+.text-Presentation .title {
+  font-size: 50px;
+  font-weight: normal;
+}
+.title {
+  font-size: 60px;
+}
+.text-Presentation .saludo {
+  font-weight: bold;
+  color: #c99806;
+  font-style: normal;
+}
+.text {
+  width: 60%;
+}
+
+/* herramientas section */
+
+.herramientas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title-clasificaciones {
+  background-color: #c99806;
+  width: 100%;
+  height: 30px;
+  color: black;
+  padding: 3px 0px 0px 40px;
+}
+.title-clasificaciones i {
+  margin-right: 20px;
+  color: black;
+}
+.herramientas-img {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 70%;
+}
+.img-herramientas {
+  width: 60px;
+  margin: 20px;
+}
+
+/* mis proyectos */
+.proyectos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.container {
+  width: 80%;
+  height: 450px;
+  overflow: hidden;
+  margin: 30px;
+}
+
+.container .swiper-slide {
+  text-align: center;
+  height: auto;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 15px;
+  text-align: start;
+}
+.container .swiper-slide img {
+  width: 225px;
+  height: 225px;
+  margin: 5px;
+  object-fit: cover;
+}
+.container .swiper-slide .card-description {
+  padding: 1rem 1rem;
+}
+.card-title h4 {
+  color: black;
+}
+.card-text p {
+  color: black;
+}
+.container .swiper-slide .card-title,
+.container .swiper-slide .card-text {
+  margin-bottom: 0.5rem;
+}
+.container .swiper-slide .card-link {
+  text-align: center;
+}
+.container .swiper-slide .card-link a {
+  text-decoration: none;
+  color: #1d6ce2;
+}
+.swiper-button-next {
+  right: 69px !important;
+  top: 22cm !important;
+}
+.swiper-button-prev {
+  left: 66px !important;
+  top: 22cm !important;
+}
+
+/* mis estudios  */
+
+.mis-estudios {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+
+.container-card {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.card {
+  border: solid white;
+  border-radius: 20px;
+  width: 350px;
+  height: 400px;
+  padding: 20px;
+  margin: 40px;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.card p {
+  margin-top: 20px;
+}
+.enlace {
+  margin-bottom: 20px;
+  color: black;
+  font-weight: bold;
+  background-color: #c99806;
+  padding: 20px;
+  border-radius: 30px;
+  border: solid 1px white;
+}
+
+/* contactos */
+.contactos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.redes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+.redes li a {
+  font-size: 60px;
+  margin: 20px;
+  
+}
+#gmail:hover{
+ color: #9E0A05;
+}
+#git:hover{
+  color: #EB4D28;
+}
+#link:hover{
+  color: #0962BB;
+}
+#whatsapp:hover{
+  color: #37D351;
+  
+}
+
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+footer hr {
+  width: 80%;
+  margin-top: 20px;
+}
+.derechos-de-autor {
+  text-align: center;
+  margin-top: 60px;
+}

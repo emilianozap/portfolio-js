@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Rubik", sans-serif;
+}
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  background-repeat: no-repeat;
+  background-size: 100% 510%;
+}
+
+header {
+  background-color: #c99806;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+}
+.header-container h1 {
+  font-size: 45px;
+  color: black;
+  text-decoration: underline;
+}
+.logo {
+  width: 170px;
+  margin-bottom: 10px;
+}
+.home {
+  font-size: 40px;
+  padding: 20px;
+  color: black;
+}
+.home:hover {
+  color: red;
+}
+
+/* hero */
+.hero {
+}
+.image {
+  width: 100%;
+  height: 500px;
+  position: relative;
+  margin: auto;
+}
+.image:before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.9));
+}
+.image img {
+  width: 100%;
+  display: block;
+  height: 100%;
+}
+/* description*/
+.description{
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.info{
+  color: aliceblue;
+  display: flex;
+  width: 80%;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.caracteristicas h1{
+  font-weight: bold;
+  font-size: 27px;
+  margin: 20px;
+  text-align: center;
+
+}
+.caracteristicas{
+  width: 80%;
+}
+.caracteristicas p{
+  font-size: 20px;
+  text-align: center;
+}
+.enlaces{
+  width: 200px;
+  margin-top: 20px;
+  
+}
+.enlaces ul li{
+  background-color: #c99806;
+  border-radius: 20px;
+}
+.enlaces ul li a{
+  text-decoration: none;
+
+ 
+
+}
+
+.enlaces ul li a p{
+  text-align: center;
+  font-size: 30px;
+  color: white;
+  
+}
+.enlaces ul li:hover{
+
+  background-color: red;
+
+}
+.enlaces ul li a p i{
+  margin: 5px;
+
+}
+
+
+
+
+
+/* footer */
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+}
+
+footer hr {
+  width: 80%;
+  margin-top: 20px;
+}
+.derechos-de-autor {
+  text-align: center;
+  margin-top: 60px;
+  color: wheat;
+  font-size: 15px;
+}
