@@ -2,6 +2,71 @@
   .header-container h1{
     display: none;
   }
+  #img{
+    border-radius: 20px;
+    width: 100%;
+    height: 300px;
+   
+  }
 
   
+}
+@media (max-width: 530px) {
+
+  #img{
+    border-radius: 20px;
+    width: 100%;
+    height: 250px;
+   
+  }
+
+  
+}
+@media (max-width: 430px) {
+  .container-carrusel{
+    width: 100%;
+   
+   
+    }
+
+  #img{
+    border-radius: 0px;
+    width: 100%;
+   
+  }
+
+  
+}
+@media (max-width: 530px) {
+  .image {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin: auto;
+  }
+
+
+
+  
+}
+@media (max-width: 430px) {
+  .image {
+    width: 100%;
+    height: 260px;
+    position: relative;
+    margin: auto;
+  }
+
+
+
+  
+}
+@media (max-width: 330px) {
+  .image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    margin: auto;
+  }
+
 }

@@ -56,8 +56,7 @@ header {
 }
 
 /* hero */
-.hero {
-}
+
 .image {
   width: 100%;
   height: 500px;
@@ -164,3 +163,37 @@ footer hr {
   color: wheat;
   font-size: 15px;
 }
+
+
+/* carrusel certificados*/
+.hero-certificaciones{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: black;
+}
+.hero-certificaciones h1{
+color: white;
+margin: 20px;
+}
+
+.container-carrusel{
+width: 80%;
+height: auto;
+margin: 20px;
+}
+#img{
+  border-radius: 20px;
+  width: 100%;
+  height: 500px;
+ 
+}
+.carousel-indicators{
+  position: absolute;
+}
+#radius{
+  color: red;
+}
+
+
