@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="/assets/styled/animaciones.css">
 
     <title>Portfolio web</title>
   </head>
@@ -23,26 +24,30 @@
         <h1>Emiliano Zapata</h1>
         <img class="logo" src="./assets//img/logo.png" alt="logo" />
       </div>
-      <div class="toogle-menu"><i class="bi bi-list menu"></i></div>
+      <div class="toogle-menu" id="abrir"><i class="bi bi-list menu"></i></div>
       <div class="menu">
    
-      <div class="section-navbar">
-      <nav class="navbar">
+      <div class="section-navbar" id="nav">
+      <nav class="navbar" >
+
         <ul class="list-nav">
-          <li>
-            <a href="#"><p class="text">Home</p><i class="bi bi-house"></i></a>
+          <li class="button">
+            <button class="button" id="cerrar"><i class="bi bi-x-circle-fill"></i></button>
           </li>
           <li>
-            <a href="#proyectos"><p class="text">Proyectos</p><i class="bi bi-laptop"></i></a>
+            <a href="#" id="link"><p class="text">Home</p><i class="bi bi-house"></i></a>
           </li>
           <li>
-            <a href="#herramientas"><p class="text">Herramientas</p> <i class="bi bi-wrench-adjustable-circle"></i></a>
+            <a href="#proyectos" id="link" ><p class="text">Proyectos</p><i class="bi bi-laptop"></i></a>
           </li>
           <li>
-            <a href="#estudios"><p class="text">Estudios</p><i class="bi bi-journal-code"></i></a>
+            <a href="#herramientas" id="link" ><p class="text">Herramientas</p> <i class="bi bi-wrench-adjustable-circle"></i></a>
           </li>
           <li>
-            <a href="#contactos"><p class="text">Contactos</p><i class="bi bi-telephone-inbound"></i></a>
+            <a href="#estudios" id="link" ><p class="text">Estudios</p><i class="bi bi-journal-code"></i></a>
+          </li>
+          <li>
+            <a href="#contactos" id="link" ><p class="text">Contactos</p><i class="bi bi-telephone-inbound"></i></a>
           </li>
         </ul>
       </nav>
@@ -302,7 +307,7 @@
             <a href="https://wa.me/5491123930095?text=hola%20me%20gustaría%20ponerme%20en%20contacto" target="_blank"> <i id="whatsapp" class="bi bi-whatsapp"></i></a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/in/emilianozap/" target="_blank"><i id="link" class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/in/emilianozap/" target="_blank"><i id="linke" class="bi bi-linkedin"></i></a>
           </li>
           <li>
             <a href="https://github.com/emilianozap" target="_blank"><i id="git" class="bi bi-git"></i></a>

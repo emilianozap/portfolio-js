@@ -1,0 +1,25 @@
+@keyframes mover{
+    100%{
+      transform: translateX(0%);
+    }
+    0%{
+      transform: translateX(50%);
+      opacity: 0.5;
+  
+    }
+  
+  
+  }
+
+  @keyframes mover2{
+    100%{
+      transform: translateY(0%);
+    }
+    0%{
+      transform: translateY(50%);
+      opacity: 0.5;
+  
+    }
+  
+  
+  }

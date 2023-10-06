@@ -35,6 +35,7 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+ 
 }
 .header-container {
   display: flex;
@@ -60,6 +61,8 @@ header {
   top: 5cm;
 }
 
+
+
 .navbar {
   display: flex;
   justify-content: end;
@@ -67,12 +70,30 @@ header {
   height: 100%;
   width: 50px;
 }
+.button{
+  border: none;
+  font-size: 20px;
+  background-color: transparent;
+  display: none;
+  position: relative;
+  left: 90px;
+
+}
+.button i{
+  font-size: 20px;
+  color: black;
+}
 
 .navbar ul li {
   border-radius: 50%;
   background-color: #c99806;
   padding: 6px;
   margin: 10px;
+  transition: 1s;
+}
+.navbar ul :hover {
+  transform: rotate(20deg);
+
 }
 
 .navbar ul li a i {
@@ -99,7 +120,13 @@ header {
 .img-hero {
   width: 35%;
   height: 500px;
+
+  animation: mover;
+  animation-duration: 2s;
+
 }
+
+
 /* text hero*/
 
 .text-hero {
@@ -107,6 +134,8 @@ header {
   flex-direction: column;
   width: 60%;
   justify-content: end;
+  animation-name: mover2;
+  animation-duration: 2s;
 }
 
 .btn {
@@ -228,6 +257,7 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+ 
 }
 
 
@@ -328,6 +358,11 @@ header {
   padding: 20px;
   border-radius: 30px;
   border: solid 1px white;
+  transition: 1s;
+}
+.enlace:hover{
+  transform: scale(1.1);
+
 }
 
 /* contactos */
@@ -349,19 +384,28 @@ header {
 .redes li a {
   font-size: 60px;
   margin: 20px;
+  transition: 1s;
+
   
 }
 #gmail:hover{
  color: #9E0A05;
+ font-size: 65px;
+
 }
 #git:hover{
   color: #EB4D28;
+  font-size: 65px;
+
 }
-#link:hover{
+#linke:hover{
   color: #0962BB;
+  font-size: 65px;
 }
 #whatsapp:hover{
   color: #37D351;
+  font-size: 65px;
+
   
 }
 

@@ -8,20 +8,32 @@
   .swiper-button-prev {
     left: 30px !important;
   }
+  header {
+    position: fixed;
+    z-index: 2222;
+  }
   .section-navbar {
     display: none;
     justify-content: flex-end;
     align-items: flex-start;
-    background-color:#c99806;
-    top: 1.8cm;
+    background-color: #c99806;
+    top: 0px;
     width: auto;
     height: 100%;
     right: 0;
+  
+    box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.8);
+  }
+  .section-navbar.visible {
+    display: flex;
   }
   .navbar {
     width: 100%;
   }
-  .list-nav{
+  .button {
+    display: flex;
+  }
+  .list-nav {
     position: relative;
     top: -1cm;
   }
@@ -31,41 +43,32 @@
     padding: 10px;
     margin: 30px;
   }
-  .navbar ul li:hover {
-    border-radius: 2px;
-    background-color: red;
-    color: #c99806;
-  }
-  .navbar ul li a{
+
+  .navbar ul li a {
     display: flex;
     justify-content: end;
     align-items: center;
     flex-direction: row;
     width: 200px;
-    
   }
   .navbar ul li a p {
     display: flex;
     color: black;
     font-weight: bold;
-   }
+  }
   .toogle-menu i {
     font-size: 50px;
     color: black;
     display: flex;
     position: relative;
-    left:  1cm;
+    left: 1cm;
   }
-
 }
 
 @media (max-width: 950px) {
   .card {
     height: auto;
-
   }
-
- 
 }
 @media (max-width: 857px) {
   .swiper-button-next {
@@ -74,7 +77,6 @@
   .swiper-button-prev {
     left: 30px !important;
   }
-
 }
 
 @media (max-width: 750px) {
@@ -83,8 +85,6 @@
     left: 20px;
   }
 
-
-  
   .hero {
     flex-direction: column;
     justify-content: center;
@@ -140,12 +140,10 @@
     width: 260px;
   }
   .herramientas-img {
- 
     width: 90%;
   }
   .toogle-menu i {
- 
-    left:  0cm;
+    left: 0cm;
   }
 }
 
@@ -211,5 +209,3 @@
     height: 180px;
   }
 }
-
-

@@ -81,11 +81,12 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 
 .info{
-  color: aliceblue;
+  color: white;
   display: flex;
   width: 80%;
   margin: 20px;
@@ -111,6 +112,10 @@ header {
 .enlaces{
   width: 200px;
   margin-top: 20px;
+  margin: 0%;
+  padding: 0%;
+  position: relative;
+  right:  0.5cm;
   
 }
 .enlaces ul li{
@@ -160,7 +165,7 @@ footer hr {
 .derechos-de-autor {
   text-align: center;
   margin-top: 60px;
-  color: wheat;
+  color: white;
   font-size: 15px;
 }
 
