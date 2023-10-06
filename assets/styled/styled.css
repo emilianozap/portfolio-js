@@ -1,5 +1,5 @@
 
-
+@import url('https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@600&family=Kalam:wght@700&family=Roboto:ital,wght@1,500&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -8,11 +8,15 @@
   list-style-type: none;
   font-family: "Rubik", sans-serif;
   color: white;
+  font-family: 'AR One Sans', sans-serif;
+font-family: 'Kalam', cursive;
+font-family: 'Roboto', sans-serif;
 }
 html,
 body {
   position: relative;
   height: 100%;
+  scroll-behavior: smooth;
   
 }
 
@@ -26,6 +30,15 @@ body {
   background-repeat: no-repeat;
  background-size: 100% 510%;
  
+ 
+}
+body::-webkit-scrollbar{
+  background-color: black;
+  width: 6px;
+}
+body::-webkit-scrollbar-thumb{
+  background-color: #FF0000;
+  border-radius: 20px;
 }
 /* header */
 header {
@@ -344,7 +357,7 @@ header {
   padding: 20px;
   margin: 40px;
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.8;
 }
 
 .card p {
