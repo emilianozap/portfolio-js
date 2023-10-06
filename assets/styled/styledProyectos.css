@@ -177,16 +177,19 @@ footer hr {
   align-items: center;
   flex-direction: column;
   background-color: black;
+
+
 }
 .hero-certificaciones h1{
 color: white;
-margin: 20px;
+padding: 20px;
 }
 
 .container-carrusel{
 width: 80%;
-height: auto;
+height: 520px;
 margin: 20px;
+
 }
 #img{
   border-radius: 20px;
