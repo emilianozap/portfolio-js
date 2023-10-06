@@ -204,6 +204,7 @@ margin: 20px;
   color: red;
 }
 .final{
-  height: 250px;
+  height: auto;
+  background-color: black;
 }
 
