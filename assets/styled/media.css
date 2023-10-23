@@ -92,11 +92,13 @@
   }
   .img-hero {
     width: 60%;
+    height: 450px;
     border: solid #c99806;
     margin-top: 10px;
     border-radius: 20px;
     background-image: url(/assets/img/fond.png);
     background-repeat: no-repeat;
+    margin-top: 90px;
   }
 
   .card {
