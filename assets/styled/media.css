@@ -166,9 +166,15 @@
 }
 
 @media (max-width: 441px) {
-  body {
-    background-size: 100% 850%;
+  .title{
+    text-align: center;
   }
+  .text-hero{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+ 
   .text-Presentation .title {
     font-size: 30px;
     font-weight: normal;
@@ -183,11 +189,7 @@
 
 @media (max-width: 346px) {
 
-  .btn{
-    position: relative;
-    left: 0.8cm;
-   
-  }
+ 
   .swiper-button-next {
     right: 0.2cm !important;
   }
