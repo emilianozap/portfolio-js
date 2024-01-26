@@ -138,6 +138,10 @@ header {
   animation-name: mover2;
   animation-duration: 2s;
 }
+.text1{
+  color: #fff;
+  width: 70%;
+}
 
 .btn {
   margin: 30px 0px 30px 0px;
