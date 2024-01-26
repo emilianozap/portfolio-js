@@ -182,8 +182,11 @@
 }
 
 @media (max-width: 346px) {
-  body {
-    background-size: 100% 1000%;
+
+  .btn{
+    position: relative;
+    left: 0.8cm;
+   
   }
   .swiper-button-next {
     right: 0.2cm !important;
@@ -197,11 +200,7 @@
 }
 
 @media (max-width: 300px) {
-  .btn{
-    position: relative;
-    left: 0.8cm;
-   
-  }
+ 
   .swiper-button-next {
     right: 0cm !important;
   }
