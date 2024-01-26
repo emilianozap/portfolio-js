@@ -35,7 +35,7 @@ const skills = [
 
     }, {
         image: "/assets/img/herramientas/s.png",
-        title: "Styled components",
+        title: "styled components",
         id: 15,
 
     },

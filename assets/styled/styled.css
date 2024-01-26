@@ -236,10 +236,9 @@ header {
   height: 150px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   border-radius: 10px;
-  text-align: center;
   margin: 10px;
   
 
@@ -247,6 +246,7 @@ header {
 .text{
   color: black;
   text-align: center;
+  width: 100%;
 }
 
 .title-clasificaciones {
@@ -318,6 +318,10 @@ header {
   font-size: 18px;
   background: #fff;
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
   border-radius: 15px;
   margin: 17px;
   scroll-snap-align: center;
