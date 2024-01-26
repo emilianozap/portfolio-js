@@ -1,6 +1,74 @@
 const nav = document.querySelector("#nav")
 const open = document.querySelector("#abrir")
 const close = document.querySelector("#cerrar")
+const renderCarrusel = document.querySelector(".swiper-card")
+const herramientas = document.querySelector("#skills")
+
+const renderCart = (project)=>{
+	const { image, title,  description , href} = project
+	return`
+	<div class ="project">
+	<img src="${image}" alt="${title}" />
+	<div class="card-description">
+	  <div class="card-title">
+		<h4>${title}</h4>
+	  </div>
+	  <div class="card-text">
+		<p>${description}</p>
+	  </div>
+	  <div class="card-link">
+		<a href="${href}">Ver más</a>
+	  </div>
+	</div>
+	</div>
+	`
+}
+
+
+
+
+const renderProjects = (productsList) => {
+	renderCarrusel.innerHTML += productsList.map(renderCart).join(" ")
+}
+
+
+//render Herramientas
+
+const cardHerramientas = (herramienta) =>{
+	const {image, title} = herramienta;
+	return`
+	<div class ="cardHerramientas">
+	<img
+	class="img-herramientas"
+	src="${image}"
+	alt="${title}"
+  />
+  <p class="text">${title}</p>
+ </div>
+  `
+  
+}
+
+const renderHerramientas= (herramientaList)=>{
+	herramientas.innerHTML += herramientaList.map(cardHerramientas).join("")
+
+}
+
+
+
+
+
+
+
+
+
+const init = ()=>{
+ renderProjects (projects)
+ renderHerramientas(skills)
+
+};
+init()
+
 
 open.addEventListener("click", ()=>{
 	nav.classList.add("visible")
@@ -87,8 +155,10 @@ var swiper = new Swiper('.swiper-container', {
 	  },
 	
       1240: {
-		slidesPerView: 4,
+		slidesPerView: 3,
 		spaceBetween: 50,
 	  },
 	} 
     });
+
+	// render carrusel

@@ -24,7 +24,7 @@ body {
   color: white;
   margin: 0;
   padding: 0;
-  background-image: url(/assets/img/fondo2.jpg);
+  background-color: #212121;
   background-repeat: no-repeat;
   background-size: 100% 510%;
 }
@@ -66,7 +66,7 @@ header {
   position: fixed;
   right: 0.1cm;
   z-index: 5555;
-  top: 3.5cm;
+  top: 5cm;
 }
 
 .navbar {
@@ -226,6 +226,24 @@ header {
   align-items: center;
   flex-direction: column;
 }
+.cardHerramientas{
+  background-color: white;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  margin: 10px;
+  
+
+}
+.text{
+  color: black;
+  text-align: center;
+}
 
 .title-clasificaciones {
   background-color: #c99806;
@@ -241,15 +259,25 @@ header {
 .herramientas-img {
   margin: 10px;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 70%;
+  width: 80%;
+
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+ 
+}
+.herramientas-img::-webkit-scrollbar {
+  background-color: black;
+  width: 6px;
+  height: 6px;
+}
+.herramientas-img::-webkit-scrollbar-thumb {
+  background-color: #ff0000;
+  border-radius: 20px;
 }
 .img-herramientas {
   width: 60px;
   margin: 20px;
+ scroll-snap-align: center;
 }
 
 /* mis proyectos */
@@ -262,30 +290,42 @@ header {
 
 .container {
   width: 80%;
-  height: 450px;
-  overflow: hidden;
+  height: 495px;
   margin: 30px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+}
+.container::-webkit-scrollbar {
+  background-color: black;
+  width: 100%;
+  height: 6px;
+}
+.container::-webkit-scrollbar-thumb {
+  background-color: #ff0000;
+  border-radius: 20px;
 }
 
-.container .swiper-slide {
-  text-align: center;
+.container .swiper-card {
+  display: flex;
+  width: 100%;
+}
+.project {
   height: auto;
   font-size: 18px;
   background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  text-align: center;
   border-radius: 15px;
-  text-align: start;
+  margin: 17px;
+  scroll-snap-align: center;
+
 }
-.container .swiper-slide img {
+.container .swiper-card img {
   width: 225px;
   height: 225px;
   margin: 5px;
   object-fit: cover;
 }
-.container .swiper-slide .card-description {
+.container .swiper-card .card-description {
   padding: 1rem 1rem;
 }
 .card-title h4 {
@@ -294,25 +334,18 @@ header {
 .card-text p {
   color: black;
 }
-.container .swiper-slide .card-title,
-.container .swiper-slide .card-text {
+.container .swiper-card .card-title,
+.container .swiper-card .card-text {
   margin-bottom: 0.5rem;
 }
-.container .swiper-slide .card-link {
+.container .swiper-card .card-link {
   text-align: center;
 }
-.container .swiper-slide .card-link a {
+.container .swiper-card .card-link a {
   text-decoration: none;
   color: #1d6ce2;
 }
-.swiper-button-next {
-  right: 69px !important;
-  top: 22cm !important;
-}
-.swiper-button-prev {
-  left: 66px !important;
-  top: 22cm !important;
-}
+
 
 /* mis estudios  */
 
@@ -334,18 +367,21 @@ header {
 }
 
 .card {
-  border: solid white;
   border-radius: 20px;
   width: 350px;
   height: 400px;
   padding: 20px;
   margin: 40px;
-  background-color: black;
-  opacity: 0.8;
+  background-color: white;
+  
+}
+.title2{
+  color: black;
 }
 
 .card p {
   margin-top: 20px;
+  color: black;
 }
 .enlace {
   margin-bottom: 20px;
@@ -359,6 +395,7 @@ header {
 }
 .enlace:hover {
   transform: scale(1.1);
+  background-color: #ff0000;
 }
 
 /* contactos */
